@@ -14,6 +14,10 @@ body{
     background-color: transparent !important;
 }
 
+.navbar-registro{
+
+    background-color: cadetblue !important;
+}
 .navbar ul li {
 
     list-style: none;
