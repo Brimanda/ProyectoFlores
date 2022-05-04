@@ -1,4 +1,4 @@
-body{
+.index{
     
     background: linear-gradient(rgba(5,7,12, 0.80), rgba(5,7,12,0.80));
     background-image: url(../img/principal.jpg);
@@ -14,7 +14,7 @@ body{
     background-color: transparent !important;
 }
 
-.navbar-registro{
+.registro{
 
     background-color: cadetblue !important;
 }
