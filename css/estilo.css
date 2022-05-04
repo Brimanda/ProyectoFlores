@@ -1,5 +1,6 @@
 body{
     
+    background: linear-gradient(rgba(5,7,12, 0.80), rgba(5,7,12,0.80));
     background-image: url(../img/principal.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -11,4 +12,9 @@ body{
 .navbar-custom{
 
     background-color: transparent !important;
+}
+
+.navbar-brand
+{
+  font-size: 200px;
 }
