@@ -1,402 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junta de Vecinos</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"-->
-    <link rel="stylesheet" href="estilo.css">
-
-    <title>Junta de Vecinos Recreo</title>
 </head>
-
-<body style="position: relative;" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="10"
-    tabindex="0">
-
+<body>
+  <div class="index">
     <!-- Menu -->
-    <nav id="navbar-example3" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a href="/" class="navbar-brand">
-                <i class="bi bi-tree-fill"></i>
-                <span class="align-middle">
-                    Junta de Vecinos Recreo
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#inicio" class="nav-link active" aria-current="page">
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#productos" class="nav-link">
-                            Productos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#quienessomos" class="nav-link">
-                            Quienes Somos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#dona" class="nav-link">
-                            F. Chorrillos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contacto" class="nav-link">
-                            Contacto
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#registro" class="nav-link">
-                            Registro
-                        </a>
-                    </li>
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+              <img src="./img/logo.png" alt="" width="240" height="124"></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./quienessomos.html">¿Quienes Somos?</a>
+                  </li>
                 </ul>
-
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./registro.html">Registro</a>
+                    </li>
+              </div>
             </div>
-        </div>
-
     </nav>
-    <!-- Menu -->
-    <!-- Carrusel -->
-    <section id="inicio">
-        <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/slider1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Flor</h5>
-                        <p>Una flor florece para obtener su propia energía</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/slider2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Productos</h5>
-                        <p>Tenemos productos que te encantarán!</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-    <!-- Carrusel -->
-
-    <!-- Productos -->
-    <main class="bg-dark text-white py-5" id="productos">
-        <div class="container">
-            <div class="text-center py-5">
-                <i class="bi bi-star h2"></i>
-                <i class="bi bi-star h2"></i>
-                <i class="bi bi-star h2"></i>
-            </div>
-            <h2 class="text-center display-4 mb-5">Productos</h2>
-
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-4">
-                    <h5>¿Est&aacute;s interesad@ en nuestros productos?</h5>
-                    <hr>
-                    <p>Pincha al bot&oacute;n que dice Productos para llevarte a la pagina donde podr&aacute;s encontrar
-                        todo lo relacionado a nuestros productos disponibles
-                    </p>
-                    <button class="btn btn-outline-light mb-5 mb-lg-0">
-                        Productos
-                    </button>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <img src="img/slider4.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
-            <h1 class="py-5 display-6">"Una flor es breve, pero la alegría que regala en un minuto es una de esas cosas que no tienen un comienzo o un final. Paul Cladel"</h1>
-        </div>
-    </main>
-    <!-- Productos -->
-    <!-- Quienes somos -->
-    <section id="quienessomos" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center py-5 h1">
-                <i class="bi bi-chat-left-quote"></i>
-                <i class="bi bi-chat-left-quote"></i>
-                <i class="bi bi-chat-left-quote"></i>
-            </div>
-
-            <h2 class="text-center mb-5 display-4">¿Quienes Somos?</h2>
-            <p class="lead mb-5 text-center">Somos una agrupaci&oacute;n vecinal, quieres saber m&aacute;s de nosotros?
-                ¡Ven a conocernos!
-            </p>
-
-            <div class="row">
-                <div class="col12 col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
-                    <img src="img/vertical1.jpg" alt="" class="img-fluid rounded">
-                </div>
-                <div class="col12 col-md-6 col-lg-8 col-xl-9">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Nuestra Historia
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    En resumidas cuentas, somos una agrupaci&oacute;n vecinal que comenzamos este emprendimiento
-                                    que se trata vender flores y cosas relacionadas a est&aacute;, la c&uacute;al comenz&oacute; para apoyar
-                                    a una Fundaci&oacute;n sin fines de lucro
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Nuestros Valores
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    - Nos importa la satisfacci&oacute;n del cliente al obtener uno de nuestros productos<br>
-                                    - Nos preocupamos de su comodidad<br> 
-                                    - Procuramos mantener una buena reputación
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Nuestras Metas
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    - Poder expandirnos a m&aacute;s lugares sin restricci&oacute;n alguna<br> 
-                                    - Ser reconocidos nacionalmente en el rubro de la florer&iacute;a<br> 
-                                    - Obtener logros y reputaci&oacute;n por recomendaci&oacute;n de los usuarios
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Quienes somos -->
-
-    <!-- F. Chorrillos -->
-    <section id="dona" class="bg-secondary text-light">
-        <div class="container">
-            <div class="text-center h1 py-5">
-                <i class="bi bi-bell"></i>
-                <i class="bi bi-bell"></i>
-                <i class="bi bi-bell"></i>
-            </div>
-            <h2 class="text-center mb-5 display-4">
-                Donacion Fundacion Chorrillos
-            </h2>
-
-            <p class="lead text-center pb-5">
-                ¡Te invitamos a ayudar si est&aacute;s interesado a est&aacute; Fundaci&oacute;n sin fines de lucro llamada Chorrillos
-                la cu&aacute;l se encarga de recibir donaciones para su agrupaci&oacute;n!
-            </p>
-            <div class="row text-dark text-center">
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="my-5">$1.000</h2>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                Dona
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="my-5">$5.000</h2>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                Dona
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="my-5">$10.000</h2>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                            <li class="list-group-item">Lorem, ipsum dolor.</li>
-                        </ul>
-                        <div class="card-body">
-                            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                                Dona
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </section>
-    <!-- F. Chorrillos -->
-    <!-- Contacto -->
-    <main class="bg-dark text-white py-5" id="contacto">
-        <div class="container">
-            <div class="text-center py-5">
-                <i class="bi bi-envelope h2"></i>
-                <i class="bi bi-geo h2"></i>
-                <i class="bi bi-envelope h2"></i>
-            </div>
-            <h2 class="text-center display-4 mb-5">Contacto</h2>
-
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-4">
-                    <h5>Lorem ipsum dolor sit amet.</h5>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed fugit obcaecati
-                        consectetur delectus
-                        fugiat quia temporibus iste, ea perspiciatis alias voluptate, veritatis amet? Voluptatibus
-                        assumenda quos
-                        suscipit tempore est.</p>
-                    <button class="btn btn-outline-light mb-5 mb-lg-0">
-                        Datos
-                        <i class="bi bi-envelope"></i>
-                    </button>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <img src="img/slider5.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </main>
-    <!-- Contacto -->
-    <!-- Footer -->
-    <footer class="container-fluid bg-dark py-5 text-center text-light">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempora recusandae rem numquam totam
-            dicta molestias iusto ab, quasi nihil repudiandae iste corrupti deserunt nemo illum cum, aperiam voluptatum
-            distinctio.</p>
-    </footer>
-    <!-- Footer -->
-    <!-- Modal 1 -->
-  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel1">Modal title 1</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
   </div>
-  <!-- Modal 1-->
 
-  <!-- Modal 2 -->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel2">Modal title 2</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal 2-->
 
-  <!-- Modal 3 -->
-  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel3">Modal title 3</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal 3-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
