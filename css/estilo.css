@@ -14,10 +14,36 @@ body{
     background-color: transparent !important;
 }
 
+.navbar ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
 .navbar ul li a {
 
     text-decoration: none;
     color: white;
     font-family: Roboto, "sans-serif";
     font-size: 1.3rem;
+}
+
+.navbar ul li::before{
+
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+
+    width: 100%;
+
 }
