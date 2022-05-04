@@ -14,7 +14,10 @@ body{
     background-color: transparent !important;
 }
 
-.navbar-brand
-{
-  font-size: 200px;
+.navbar ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.3rem;
 }
