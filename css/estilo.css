@@ -10,7 +10,7 @@
 }
 .productos{
     
-    background: linear-gradient(rgba(5,7,12, 0.80), rgba(5,7,12,0.80));
+    background: linear-gradient(rgba(4, 5, 8, 0.8), rgba(17, 20, 30, 0.8));
     background-image: url(../img/principal.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -77,3 +77,29 @@
 
 }
 
+#carrusel{
+ 
+    top: 300px;
+    left: 600px;
+
+}
+
+
+#imagen1{
+
+    width: 600px;
+    height: 600px;
+
+}
+
+#imagen2{
+
+    width: 600px;
+    height: 600px;
+}
+
+#imagen3{
+
+    width: 600px;
+    height: 600px;
+}
